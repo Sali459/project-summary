@@ -9,7 +9,6 @@
 
 body {
   margin: 60px auto;
-  max-width: 800px;
   padding-top: 80px;
   font-family: var(--bs-font-sans-serif);
   font-family: var(--bs-font-sans-serif);
@@ -127,13 +126,13 @@ p {
   margin-left: calc(var(--bs-gutter-x) / -2);
 }
 
-.container,
-.container-fluid,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl,
-.container-xxl {
+
+fluid,
+lg,
+md,
+sm,
+xl,
+xxl {
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
@@ -169,4 +168,15 @@ p {
 .col-md-6 {
   flex: 0 0 auto;
   width: 50%;
+}
+
+@media (max-width: 600px) {
+  h2, p, a {
+    text-align: center;
+  }
+
+  .primary-link {
+    display: block;
+    justify-content: center;
+}
 }
